@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.home {
+    height: 100vh;
+    background-image: url(../images/2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.home .layer {
+    height: 100%;
+    /* background-color:rgba(255, 0, 0, 0.2) ; */
+    background-color: rgba(214, 46, 51, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .layer .nav {
+    width: 200px;
+    background-color: rgb(29, 33, 51);
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-250px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+}
+.home .layer .nav-view {
+    transform: translateX(0px);
+}
+
+.home .layer .nav ul {
+    padding: 0;
+    width: 100%;
+}
+.home .layer .nav ul li {
+    margin: 24px 0;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+}
+
+.home .layer .nav ul li a {
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-size: 1.2em;
+    padding-left: 10px;
+    transition: background-color 0.2s ease-in-out
+
+}
+.home .layer .nav ul li a:hover {
+    background-color: rgb(214, 46, 51);
+}
+
+.home .layer span {
+    background-color: rgb(29, 33, 51);
+    position: fixed;
+    top: 0;
+    left: 20px;
+    padding-right: 15px;
+    transform: translateX(-100px);
+    color: #fff;
+    font-size: 2em;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
+
+.home .layer .span-view {
+    transform: translateX(0px);
+}
+
+
+.home .container .row {
+    color: #fff;
+}
+
+.home .container .row h1 {
+    font-size: 4em;
+    font-weight:500;
+}
+
+.accordion-page .container .row h3{
+    background-color: rgba(214, 46, 51, 0.6);
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+    margin: 0;
+    cursor: pointer;
+}
+.accordion-page .container .row p{
+    background-color: #ccc;
+    text-align: center;
+    padding: 18px;
+    margin: 0;
+    display: none;
+}
+
+
+
+.timer {
+    background-image: url("../Images/1.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+.timer .layer {
+    height: 100%;
+    background-color: rgba(214, 46, 51, 0.8);
+}
+.timer #countdown-active {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.timer #countdown-active .col-md-3 {
+    padding: 20px;
+}
+
+.timer #countdown-active .single-countdown {
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    padding: 30px 50px; 
+}
+.timer #countdown-active .single-countdown h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.timer #countdown-active .single-countdown span {
+    font-size: 20px;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .timer #countdown-active .col-md-3 div {
+        /* width: 200px; */
+    }
+}
+
+
+.phone p {
+    margin-bottom: 35px;
+}
+
+.social-media a i {
+    margin-right: 10px;
+    border: 1px solid #999;
+    color: #000;
+    width: 40px;
+    height: 40px;
+    line-height: 42px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+.social-media a:hover i{
+    background-color: rgb(214, 46, 51);
+    color: #fff;
+}
